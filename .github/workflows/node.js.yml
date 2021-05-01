@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/download-artifact@main
       with:
-        name: webpack artifcacts
+        name: webpack artifacts
         path: public
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
