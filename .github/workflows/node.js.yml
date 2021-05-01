@@ -10,7 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: npm install and build webpack
-        run: npm run build --if-present
+        run: 
+          npm install 
+          npm run build
       - uses: actions/upload-artifact@main
         with:
           name: webpack artifacts
